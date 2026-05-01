@@ -1,7 +1,3 @@
-// In-Class Activity #13 — Firebase Authentication in Flutter
-// CSC 4360 — Mobile App Development — Spring 2026
-// Luci Liu
-
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -33,7 +29,6 @@ class AuthApp extends StatelessWidget {
   }
 }
 
-// Listens to Firebase auth state and routes to the right screen.
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
 

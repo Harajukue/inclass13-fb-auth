@@ -62,8 +62,6 @@ class _AuthScreenState extends State<AuthScreen>
   }
 }
 
-// ── Reusable form for both sign-in and registration ─────────────────────────
-
 class _AuthForm extends StatefulWidget {
   const _AuthForm({required this.authService, required this.isRegister});
   final AuthService authService;
@@ -158,7 +156,6 @@ class _AuthFormState extends State<_AuthForm> {
             ),
             const SizedBox(height: 28),
 
-            // Email
             TextFormField(
               controller: _emailCtrl,
               keyboardType: TextInputType.emailAddress,
@@ -176,7 +173,6 @@ class _AuthFormState extends State<_AuthForm> {
             ),
             const SizedBox(height: 14),
 
-            // Password
             TextFormField(
               controller: _passCtrl,
               obscureText: _obscurePass,
@@ -198,7 +194,6 @@ class _AuthFormState extends State<_AuthForm> {
               },
             ),
 
-            // Confirm password (register only)
             if (widget.isRegister) ...[
               const SizedBox(height: 14),
               TextFormField(
